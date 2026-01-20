@@ -24,8 +24,6 @@ body {
   width: 100%;
   color: white;
 }
-/* 412567
-1A0B2E */
 
 /* shared style start */
 
@@ -182,8 +180,7 @@ header .container {
 
 /* about section related style  */
 .about {
-  /* background: #1a0b2e; */
-  background: rgba(26, 11, 46, 1);
+  background: rgb(26, 11, 46);
   height: 40rem;
 }
 .about .section-title {
@@ -207,7 +204,7 @@ header .container {
 
   border-bottom: 1px solid #412567;
 }
-.section-description {
+.about .section-description {
   max-width: 70%;
 }
 
@@ -234,7 +231,6 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 .choose h2 {
   padding: 7.5rem 0 2.5rem;
@@ -293,44 +289,21 @@ header .container {
   text-align: center;
 }
 .feature-cards {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.8rem;
-  padding-bottom: 7.5rem; */
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.4rem;
   padding-bottom: 7.5rem;
 }
 .card {
-  /* background: #250d44;
-  width: 32rem;
-  height: 27.4rem;
-  border-radius: 1.4rem;
-  padding: 24px;
-  position: relative; */
-
   border-radius: 1.6rem;
   background: #250d44;
 }
 .card-video iframe {
-  /* width: 100%;
-  height: 50%;
-  border-radius: 1.4rem 1.4rem 0 0;
-  position: absolute;
-  top: -0rem;
-  right: 0rem; */
-
   border-radius: 1.6rem 1.6rem 0 0;
   width: 100%;
   height: 13rem;
 }
 .card-content {
-  /* width: 90%;
-  position: absolute;
-  top: 220px; */
   padding: 1.5rem;
 }
 
@@ -342,6 +315,48 @@ header .container {
 .card-content .duration {
   padding-top: 1rem;
   display: flex;
+}
+/* host section */
+.host {
+  padding-bottom: 7.5rem;
+}
+.host .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.host-card {
+  background: #250d44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2.8rem;
+  border-radius: 3rem;
+}
+.host-img {
+  padding-right: 1.5rem;
+}
+.host-name {
+  font-size: 2rem;
+}
+.biography {
+  padding: 1rem 0;
+}
+.media-container {
+  display: flex;
+}
+.media-container a {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 2px solid #533c77;
+  position: relative;
+}
+.media-container img {
+  width: 1.2rem;
+  top: 0.7rem;
+  right: 0.65rem;
+  position: absolute;
 }
 
 @media screen and (max-width: 576px) {
@@ -362,7 +377,6 @@ header .container {
   /* Banner Image */
   .banner {
     background-position: center;
-    /* background-size: cover; */
     background-size: 100% 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -419,6 +433,9 @@ header .container {
     justify-content: center;
     align-items: center;
   }
+  .section-description {
+    max-width: 90%;
+  }
 
   /* why choose grid layout  */
   .choose-layout {
@@ -455,5 +472,22 @@ header .container {
   }
   .card-content h3 {
     font-size: 1.2rem;
+  }
+
+  /* host section  */
+  .host-img {
+    padding: 1rem 0;
+  }
+  .host-name {
+    font-size: 1.5rem;
+  }
+  .host-card {
+    padding: 0.3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .media-container {
+    display: flex;
+    justify-content: center;
   }
 }

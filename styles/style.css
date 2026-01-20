@@ -359,6 +359,44 @@ header .container {
   position: absolute;
 }
 
+/* footer  */
+footer {
+  background: url(/assets/footer-bg.png);
+  background-position: center;
+  background-size: contain;
+  padding: 7.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+footer span {
+  background: var(--primary-gradiant);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+footer span:hover {
+  background: var(--gradiant-hover);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.footer-social {
+  padding: 2.1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     width: 96%;
@@ -434,7 +472,7 @@ header .container {
     align-items: center;
   }
   .section-description {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   /* why choose grid layout  */
@@ -489,5 +527,25 @@ header .container {
   .media-container {
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  /* footer  */
+  footer {
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 2.8rem 0;
+  }
+  .footer-container {
+  }
+  footer h3 {
+    font-size: 2.4rem;
+  }
+  .footer-social {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2.4rem 0;
   }
 }

@@ -3,13 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assignment-02</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css add  -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-      reprehenderit, nobis illo quia commodi quo atque explicabo voluptas
-      delectus a.
-    </p>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="brand">
+            <h3>Tech<span>Wave</span></h3>
+          </div>
+          <ul class="menu-bar">
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Episodes</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Host</a></li>
+          </ul>
+          <button class="nav-btn btn-primary">
+            Subscribe &nbsp;<img
+              src="./assets/ArrowRight.png"
+              alt="arrow right icon"
+            />
+          </button>
+          <div class="hamburger">
+            <img src="./assets/hamburger-menu.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <!-- nav section ended  -->
+      <!-- banner section start  -->
+      <div class="banner">
+        <div class="banner-img-section">
+          <div class="hero-circle">
+            <img
+              src="./assets/hero-circle.png"
+              alt="banners circle background"
+            />
+            <div class="microphone">
+              <img src="./assets/microphone.png" alt="microphone icon" />
+            </div>
+            <div class="notification">
+              <p>NEW</p>
+            </div>
+          </div>
+        </div>
+        <!-- banner content  -->
+        <div class="banner-content">
+          <h1 class="banner-title">TechWave</h1>
+          <p class="banner-description">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div class="btn-group">
+            <button class="btn-primary">
+              <img src="./assets/spotify.png" alt="spotify icon" />&nbsp; Listen
+              On Spotify
+            </button>
+            <button class="btn-secondary">
+              <img src="./assets/message.png" alt="message icon" />&nbsp;
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
